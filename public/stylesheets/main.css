@@ -1,0 +1,16 @@
+#info {
+    margin: 2% auto;
+    width: 30%;
+}
+#camps, #login, #signup{
+    text-align:center;
+}
+.img-responsive{
+    width: 100%;
+}
+.thumbnail{
+    padding:0;
+}
+.delete-form{
+    display: inline;
+}
