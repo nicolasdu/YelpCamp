@@ -27,7 +27,7 @@ app.use(methodOverride("_method"));
 app.use(require("express-session")({
     secret:"This secret is used to decode the info",
     resave:false,
-    saveUninitialized:false...
+    saveUninitialized:false
 }));
 
 app.use(passport.initialize());
@@ -40,7 +40,7 @@ passport.deserializeUser(User.deserializeUser());
 app.use(function(req,res,next){
     res.locals.currentUser=req.user;
     res.locals.error=req.flash("error");
-    res.locals.success=req.flash("sucess");
+    res.locals.success=req.flash("success");
     next();
 });
 
