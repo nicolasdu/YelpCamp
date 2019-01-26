@@ -15,7 +15,8 @@ var campgroundRoutes=require("./routes/campgrounds"),
     authRoutes=require("./routes/index");
     
 //mongoose.connect("mongodb://localhost:27017/yelp_camp",{ useNewUrlParser: true });
-mongoose.connect("mongodb://nicola:a123456@ds213255.mlab.com:13255/yelpcamp1",{ useNewUrlParser: true });
+//mongoose.connect("mongodb://nicola:a123456@ds213255.mlab.com:13255/yelpcamp1",{ useNewUrlParser: true });
+mongoose.connect(process.env.DATABASEURL);
 
 
 app.use(flash());
